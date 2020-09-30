@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gmall-user
+  datasource:
+    url: jdbc:mysql://localhost:3306/gulimall_ums?characterEncoding=utf-8&useUnicode=true&serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.seven.gmall.gmalluser.entity
+mapper:
+  identity: MYSQL
